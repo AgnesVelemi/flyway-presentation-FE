@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, sans-serif;
+  background-color:  #d6d6e0;/* #5b9aa0; #cfe0e8; #b7d7e8;  #f1e3dd;*/
+}
+
+
+.accordion-button {
+  cursor: pointer;
+  background-color: #bccad6;
+  color: #667292;
+}
+
+
+.accordion-button:hover {
+  background-color: #8d9db6;
+}
+
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background-color: white;
+}
+.accordion-content.show {
+  display: block;
+}
+
+
+.fade-in-image {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+.fade-in-image.show {
+  opacity: 1;
+}

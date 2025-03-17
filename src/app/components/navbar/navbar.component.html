@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand topush fade-text" href="#">Flyway Presentation</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="intro">Intro</a>
+      <a class="nav-item nav-link" routerLink="quickstart">Quick_start</a>
+      <a class="nav-item nav-link" routerLink="know-how">Know&How</a>
+      <a class="nav-item nav-link" (click)="translateHuText('hu')">HU</a>
+      <a class="nav-item nav-link" (click)="translateDeText('de')">DE</a>
+      <a class="nav-item nav-link" (click)="translateEnText('en')">EN</a>
+<!--      <a class="navbar-brand topush" href="#">{{ "act_lang" | translate }}</a>-->
+
+      <div class="custom-nav-item custom-dropdown">
+<!--    <a href="#"-->
+        <a [routerLink]="['/' + ('act_appearing_cv' | translate)]"
+          class="custom-dropdown-toggle"
+           id="cvDropdown" role="button" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false"
+        >{{ "act_cv_lang" | translate }}</a>
+        <div class="custom-dropdown-menu" aria-labelledby="cvDropdown">
+          <a class="custom-dropdown-item" routerLink="cvhu">HU</a>
+          <a class="custom-dropdown-item" routerLink="cven">EN</a>
+          <a class="custom-dropdown-item" routerLink="cvde">DE</a>
+        </div>
+      </div>
+      <a class="custom-nav-item" routerLink="about-this-project">About This</a>
+    </div>
+  </div>
+</nav>
+
+<!--      <div class="nav-item dropdown">-->
+<!--        <a class="navbar-brand topush dropdown-toggle"-->
+<!--           href="#" id="cvDropdown" role="button" data-toggle="dropdown"-->
+<!--           aria-haspopup="true" aria-expanded="false"-->
+<!--           style="font-size: 18px;"-->
+<!--        >CV-->
+<!--        </a>-->
+<!--        <div class="dropdown-menu" aria-labelledby="cvDropdown" >-->
+<!--          <a class="dropdown-item" routerLink="cvhu">HU CV</a>-->
+<!--          <a class="dropdown-item" routerLink="cven">EN CV</a>-->
+<!--          <a class="dropdown-item" routerLink="cvde">DE CV</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <a class="nav-item nav-link fade-text" routerLink="about-this-project" style="font-family: 'David Libre';  font-style: italic; font-size: 20px;">About This</a>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</nav>-->

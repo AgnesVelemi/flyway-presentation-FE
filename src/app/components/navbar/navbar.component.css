@@ -1,0 +1,123 @@
+.topush{
+  margin-left: 30px;
+}
+/* START sajátos CV dropdown */
+.custom-navbar {
+  background-color: #343a40;
+  padding: 1rem;
+}
+
+.custom-navbar-brand {
+  color: #fff;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.custom-navbar-toggler {
+  border: none;
+  background: none;
+}
+
+.custom-navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%288, 8, 8, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.custom-navbar-collapse {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-nav-item {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.custom-nav-item:hover {
+  background-color: #495057;
+}
+
+.custom-dropdown {
+  position: relative;
+}
+
+.custom-dropdown-toggle {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.custom-dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #343a40;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.custom-dropdown:hover .custom-dropdown-menu {
+  display: block;
+}
+
+.custom-dropdown-item {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.custom-dropdown-item:hover {
+  background-color: #495057;
+}
+/* END sajátos CV dropdown */
+
+
+
+.dropdown-item {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 5px 5px 5px;
+  color: #999;
+}
+
+.dropdown-menu {
+  color: #ddd;
+  background-color: #333;
+}
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #0056b3;
+}
+.fade-in-image {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in-image.show {
+  opacity: 1;
+}
+
+/* Add this CSS to your styles */
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 2;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+.fade-text {
+  animation: fadeInOut 5s infinite;
+}
+
+
+.fade-text:hover {
+  color: #ffffff; /* Bright white */
+}
+
+

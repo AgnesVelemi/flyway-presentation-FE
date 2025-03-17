@@ -1,0 +1,16 @@
+/* src/styles/custom.css */
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  float: none;
+  background-color: #343a40;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+  color: #fff;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #495057;
+}
